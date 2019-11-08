@@ -1,0 +1,124 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Julius+Sans+One|Staatliches|Yeseva+One&display=swap');
+
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+}
+
+p {
+  background-color: black;
+  color: white;
+  height: 25px;
+  text-align: center;
+  padding: 5px;
+}
+
+p:hover {
+  background: linear-gradient(135deg, #CA21AF, #6000DB, #0355D1, #27BEEE, #27E2EE, #27EE8E, #27E2EE, #27BEEE, #0355D1, #6000DB, #CA21AF);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 5s ease infinite;
+}
+
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 5%;}
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: Julius Sans One;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 35px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1400px;
+  margin: 1rem auto;
+  grid-gap: 20px;
+}
+
+.tutorials {
+  font-size: 2rem;
+}
+
+.footer {
+  margin-top: 5rem;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+	width: 100%;
+	background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
